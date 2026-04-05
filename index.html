@@ -1,0 +1,110 @@
+<html><head><title> data warehouse , data mining </title> 
+</head> 
+
+<body> 
+<marquee behavior ="slide"><font size="40"><b> DATA WAREHOUSE AND DATA MINING </b></font></marquee><br> 
+<h2> 
+<nav> 
+<a href="C:\Users\Admin\Downloads\daxx.html#dwh"> DATA WAREHOUSE </a>| 
+<a href="C:\Users\Admin\Downloads\daxx.html#olap"> OLAP </a>| 
+<a href="C:\Users\Admin\Downloads\daxx.html#datamining"> DATA MINING </a>| 
+<a href="C:\Users\Admin\Downloads\daxx.html#decision tree"> DECISION TREES </a>| 
+<a href="C:\Users\Admin\Downloads\daxx.html#others"> OTHERS </a> 
+</nav></h2><br> 
+<br> 
+<section id ="dwh" style ="background-color :pink"> 
+A data warehouse (dwh) perform just query and analysis , dwh is essentially <br><ol type="a"> 
+<li> subject oriented </li> 
+<li> non volatile </li> 
+<li> integrated </li> 
+<li> time - variant </li> 
+<li> historical data </li></ol> A blue - print of BI  , foll. diferences between a dwh and OLTP  database <br> 
+<table width="60%" border ="1"> 
+<thead><tr><th> data warehouse </th><th> OLTP </th></tr></thead> 
+
+<tbody> 
+<tr><td> query , analysis </td><td> transactions processing </td></tr> 
+<tr><td> de normalized tables </td><td> normalized tables </td></tr> 
+<tr><td> historical data </td><td> transient data </td></tr> 
+<tr><td> BI </td><td> transactions processing </td></tr> 
+<tr><td> slice and dice data </td><td> unlike </td></tr> 
+<tr><td> roll up , drill down </td><td> unlike </td></tr> 
+<tr><td> real time , federated , distributed </td><td> data marts </td></tr> 
+<tr><td> e.gs erwin , cognos , power builder , informatica </td><td> e.gs data marts </td></tr> 
+<tr><td colspan ="2"> OLAP  based on dwh performs faster data indexing unlike oltp </td></tr></tbody></table> 
+dwh has a 3 tier layered architecture that has foll. layers : <ul type ="disc"> 
+<li> bottom layer has centralized RDBMS  servers and MD DBMS  that have parallel processing and improved scalability </li> 
+<li> middle layer has OLAP  servers </li> 
+<li> top layer has user programs that respond to OLAP  servers </li></ul> 
+<br> 
+<a target="_blank" href="https://www.geeksforgeeks.org/dbms/data-warehouse-design-approaches/"><img src="https://media.geeksforgeeks.org/wp-content/uploads/666-3.png" alt="h" width ="300" height="300"></a> 
+<br> 
+</section> 
+<br><br> 
+<section id="olap" style ="background-color :white"> 
+olap --- online analytical processing --- just query + analysis <br> 
+faster indexing of precomputed summarized data <br> 
+de normalized tables <br> historical data <br> operational intelligence <br> 
+slice and dice data <br> roll up data , drill down <br> 
+OLAP  servers can be rolap, molap, holap. rolap more scalable less flexible than molap <br> 
+e.gs ---- erwin,cognos etc <br> 
+conformity with FASMI  principles <br><br> 
+<a target="_blank" href="https://cci.drexel.edu/faculty/song/courses/info%20607/tutorial_OLAP/server.htm"><img src="https://cci.drexel.edu/faculty/song/courses/info%20607/tutorial_OLAP/images/olapserver.gif" alt="f" width ="350" height ="350"></a> 
+<br> 
+typical olap operations on  multi - dimensional databases include <br> 
+<table width ="60%" border ="1"> 
+<tr><td> roll up </td><td> from low level to high level abstraction in generalization </td></tr> 
+
+<tr><td> drill down </td><td> from high level ---> low level abstraction in  specialization  </td></tr> 
+
+
+<tr><td> slice and dice data </td><td> projection operations along dimensions of data cubes </td></tr> 
+
+
+<tr><td> pivot data </td><td> rotate and cross - tabulate data </td></tr> 
+
+
+<tr><td colspan ="2"> sort data , select nominal atributes</td></tr> 
+</table> 
+</section> 
+
+<section id ="datamining" style ="background-color :LightGreen"> 
+while data mining deals with off -line structured text and numeric data where patterns matched , web mining deals with online unstructured and semi structured text and <br> 
+numeric data where no pattern matching . web usage mining where web data stored in  web logs , web content mining that deals <br> 
+with semi structured hyper link of www and web structure mining that deals with page layout of www. challenges in web mining ---- data segmentation <br><br> 
+<i> types of data mining <br> 
+association rule mining --- finds frequent patterns and corelated data and uses suport endowed with suport count , confidence <br> 
+where antecedent foll. consequent and general measure , lift , that finds rule interestingness , 0<lift<1. all strong association rules are <br> 
+not interesting and corelation does not imply causation.Apriori property => mean of sum of sequential patterns < sequential subpatterns . apriori algorithm uses join + prune <br> 
+where in join , link each of k+1 items from k data to itself , in prune , iterates in k no of passes <br><br> 
+
+classification ---- deals with discrete unordered data and causes grouping  of similar data , unlike eager type lazy classifiers are unsupervised l,earning where <br> 
+target atributes and end result not explicit . unlike eager classifiers lazy classifiers deal with complex data . e.gs of eager type --- decision trees , bayesian e.gs of lazy classifiers ---- clustering 
+<br><br> 
+
+
+regression ---- based on examples of past . linear regression --- a st line between 1 predictor and 1 response variables <br> 
+non linear regression ---- a quadratic equation between 2 or >2 predictors and 1 response variables <br><br> 
+
+
+clustering ---- A hierarchical data decomposition  can be aglomerative , divisive and k - nearest neighbour classification  that work on only labeled data<br> 
+
+outliers analysis ---- clustering is preferred than regression <br></i> 
+<br></section> 
+
+
+<section id ="decision tree" style ="background-color :white"> 
+decision  tree based on ID3 Algorithm that finds data homogeneity and entropy finds to what extent data is homogeneous , we can  find entropy from a freq table <br> 
+information  gain is rel. entropy reduction. we can construct a decision tree by computing info gain for each variable summing info gains till a max that renders entropy a min <br> 
+
+
+</section><br><br> 
+
+<section id ="others" style ="background-color :blue"> 
+<font color ="white"> 
+Spatial databases and text databases ---- spatial databases are derived from geo spatial consortium and used to draw 3d geometric shapes ,<br>
+add onto or modify existing 3d geometric shapes , observer reference and endowed with 3d spatial indexes as hh code and z order
+Text databases are available In word documents and text files and respond to Ad Hoc queries<br></font></section> 
+<br><footer> 
+<h2><a target ="_blank" href="#mailTo: ratulxx@gmail.com"> ratulxx@gmail.com</a></h2></footer><br> 
+</body></html> 
